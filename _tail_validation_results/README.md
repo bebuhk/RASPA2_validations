@@ -85,3 +85,22 @@ this means that Vincent implementation of the tail correction is validated!
 | RSM0016 (333) + 1 CO2| -2917.61349464 | difference: -37,80764843 |
 
 hence, the difference between the differences (which contain s-f and f-f tail corrections) is -3,20600591. dividing by 26 gives = -0,1233079196 gives again the self interaction (ff) of the 333 supercell. so the s-f tail correction is -37,6843405104.
+
+
+$$        I(\sigma_{ab}, \varepsilon_{ab})
+        = \int_{r_c}^{\infty} r^2\, u_{ab}^{\mathrm{LJ}}(r)\, \mathrm{d}r
+        = \frac{8}{3}\pi\varepsilon_{ab}\sigma_{ab}^{3}
+          \left[\frac{1}{3}\left(\frac{\sigma_{ab}}{r_c}\right)^{9}
+                - \left(\frac{\sigma_{ab}}{r_c}\right)^{3}\right]$$
+
+
+$$U_{tail,RASPA} = N^2 \cdot \frac{8}{3}\pi\, \frac{1}{V} \,\varepsilon\sigma^{3}
+\left[\frac{1}{3}\left(\frac{\sigma}{r_c}\right)^{9}-\left(\frac{\sigma}{r_c}\right)^{3}\right] =  N^2 \cdot I(\sigma, \varepsilon)$$
+
+so that 
+
+$$U_{tail,RASPA} = \sum_i^N \sum_j^N \cdot I(\sigma_{ij}, \varepsilon_{ij})$$
+
+and 
+
+$$U_{tail,s-f} = 2 \cdot \sum_i^{N_s} \sum_j^{N_f} \cdot I(\sigma_{ij}, \varepsilon_{ij})$$
