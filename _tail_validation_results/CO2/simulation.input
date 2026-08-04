@@ -1,0 +1,26 @@
+SimulationType                MonteCarlo
+NumberOfCycles                0
+NumberOfInitializationCycles  0
+PrintEvery                    1
+PrintPropertiesEvery          1
+
+Forcefield                    Local
+CutOff                        14
+ChargeMethod                  None
+UseChargesFromCIFFile         yes
+RemoveAtomNumberCodeFromLabel yes
+WriteBinaryRestartFileEvery   1000000
+
+Framework 0
+   FrameworkName              RSM0016
+   UnitCells                  1 1 1
+   ExternalTemperature        298.15
+   ExternalPressure           29806.313380957
+   HeliumVoidFraction         0.13714
+
+Component 0 MoleculeName      CO2
+   MoleculeDefinition         Local
+   BlockPockets               yes
+   BlockPocketsFileName       block_file
+   TranslationProbability     1.0
+   CreateNumberOfMolecules    1
