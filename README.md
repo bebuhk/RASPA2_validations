@@ -18,11 +18,13 @@ In *_tail_validation_results*, the computation of the tail-correction in RASPA i
 
 ### Single site
 
-in *CH4_test.def* -> define name for each group (here *CH4_BB*).
+in *CH4_test.def* -> define name for each group (here *CH4_BB*). (file can be in working folder or in $RASPA_DIR/share/raspa/molecules/Local/CH4_test.def)
 
 *pseudo_atoms.def* defines the charges (and mass,...)
 
 in *force_field_mixing_rules.def*, the LJ parameters of each group (e.g. *CH4_BB*) must be defined.
+
+then you need *simulation.input* and your cif file (can also be in $RASPA_DIR/share/raspa/structures/cif/____.cif).
 
 ## ...
 
